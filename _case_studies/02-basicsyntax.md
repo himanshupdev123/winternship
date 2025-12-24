@@ -8,7 +8,7 @@ tags: [typescript, mern]
 ---
 -->
 ---
-layout:case-study
+layout: case-study
 title: "Basics"
 order: 1
 summary: "non"
