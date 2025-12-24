@@ -1,3 +1,3 @@
 # Introduction
 
-This is a repo for discretemath website hosted at /discretemath/
+Winternship 2025
