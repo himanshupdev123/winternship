@@ -19,6 +19,7 @@ order: 2
 10. [Cliq Channel](#10-cliq-channel)
 11. [GitHub Assignment Submission](#11-github-assignment-submission)
 12. [Health Points System](#12-health-points-system)
+13. [MERN Case Studies](#13-mern-case-studies)
 
 ---
 
@@ -157,6 +158,16 @@ Try these troubleshooting steps in order:
 
 If the issue persists after trying all steps, **record the issue** and email it to: **internship-support@vicharanashala.zohodesk.in** between **9:00 AM and 9:00 PM**.
 
+**9.6 I have completed all videos and quizzes in the ViBe course, but my progress is still showing less than 100%. What should I do?**  
+
+Please do not worry. This is a **dashboard-level technical issue** that has already been acknowledged by the support team and communicated in the Cliq threads. The team is actively working on resolving it, and your progress will be **updated automatically** once the issue is fixed.
+
+In the meantime, you may try the following steps once:
+
+1. **Refresh your browser**
+2. **Log out**, clear your browser cache, and **log in again**
+
+If the issue still persists after these steps, no further action is required from your side. Your course completion status will be corrected by the support team shortly.
 
 ---
 
@@ -280,3 +291,66 @@ You lose health points for:
 
 **12.4 What are class health points?**  
 Class health points are awarded to the **entire class** when the number of students attending Zoom meetings meets the **minimum threshold requirement**.
+
+---
+
+## 13. MERN Case Studies
+
+**13.1 What are Case Studies?**  
+Case studies are **well-structured, documentation-based lessons** designed to help you apply what you have learned through **hands-on coding**. Each case study focuses on real-world problem-solving, collaborative thinking, and practical implementation to help you become more confident with the technologies covered in the ViBe course.
+
+Case studies are organized by technology, including:
+- TypeScript Fundamentals
+- React Development
+- Express.js Backend
+- MongoDB Database
+
+Each case study includes:
+- Clear problem statements
+- Defined learning objectives
+- Step-by-step explanations
+- Practical coding tasks
+- Best practices and recommended patterns
+
+
+**13.2 How do I get started with Case Studies?**  
+You can get started with case studies by following these steps:
+
+1. Click the **Case Studies** link in the navigation bar at the top of the page.
+2. Select a **technology** and then choose a **lesson**.
+3. Read the entire documentation carefully to understand the concept and tasks to be performed.
+4. Open a code editor (for example, **VS Code**) and implement the tasks in a **single file**, unless specified otherwise.
+5. Upload the file along with your details for each lesson using the provided submission link.
+
+
+**13.3 How do I submit the case studies?**  
+
+1. Visit the submission form:  
+   https://forms.zohopublic.in/annamai1/form/MERNCASEStudyChallenge/formperma/vSrDY7Uw2l5mw7UIAUk2gh2SCOryplPMeU7IncHhSX0
+2. Fill in all required details carefully, including:
+   - First name and last name  
+   - Email ID associated with the internship  
+   - Technology name and lesson number completed  
+3. Upload the file containing your solution  
+   (supported formats include `.js`, `.ts`, `.txt`, `.zip`, etc.)
+4. Review your details and submit the form.
+5. Repeat this process for **each lesson** you complete.
+
+
+**13.4 What should I do if a lesson contains multiple files?**  
+For lessons (such as React) that involve **multiple files**, compress all related files into a **single ZIP file** and upload the ZIP file during submission.
+
+
+**13.5 Where can I get help if I am stuck with the case studies?**  
+If you are facing difficulties, feel free to:
+- Join the **breakout rooms** during Zoom sessions  
+- Collaborate and discuss solutions with your peers  
+
+This collaborative approach is encouraged to enhance learning and problem-solving skills.
+
+
+**13.6 Where can I view my submission status and access the leaderboard and dashboard?**  
+You can track your submission status, access the leaderboard, and view the dashboard by visiting the following link:  
+https://docs.google.com/spreadsheets/d/1vOQY7BYRMmNiSCBkzrYR-b-1r54jViEmzvL9nD12PoI/edit?gid=2050387016#gid=2050387016
+
+
