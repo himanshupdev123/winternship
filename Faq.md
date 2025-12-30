@@ -20,7 +20,7 @@ order: 2
 11. [GitHub Assignment Submission](#11-github-assignment-submission)
 12. [Health Points System](#12-health-points-system)
 13. [MERN Case Studies](#13-mern-case-studies)
-14. [Viva](#14-viva)
+14. [Viva/PES (Endorsements)](#14-vivapes-endorsements)
 ---
 
 ## 1. Internship Overview
@@ -392,7 +392,7 @@ https://docs.google.com/spreadsheets/d/1vOQY7BYRMmNiSCBkzrYR-b-1r54jViEmzvL9nD12
 
 **13.7 What is the deadline to complete the MERN case studies?**  
 
-The **hard deadline** to complete all MERN case studies is **31st December 2025 (Wednesday)**.
+The **hard deadline** to complete all MERN case studies is **4th January 2026 (Wednesday) evening**.
 
 However, do **not focus solely on the deadline**. Meeting the deadline is **not the ultimate goal** of these case studies.  
 Their primary purpose is to give you exposure to **collaborative problem-solving**, **hands-on coding**, and to help **optimize your learning journey**, rather than forcing you to rush through tasks.
@@ -404,7 +404,7 @@ Make your learning journey a **marathon, not a race**.
 
 ---
 
-## 14. Viva
+## 14. Viva/PES (Endorsements)
 
 **14.1 How will the viva/evaluation process be conducted?**  
 Each intern is required to **select at least 5 evaluators (other interns)** who will evaluate their work, primarily based on their **case studies** solutions. Hence, make sure you are completed with all the Case studies before you evaluate someone or get evaluated yourself.
@@ -465,3 +465,7 @@ In such cases, **teaching team members** can be requested to act as your evaluat
 Additionally, **Silver and Golden Tickets** will be issued to selected interns.  
 - Interns receiving these tickets **do not need peer evaluation**
 - They will be **directly evaluated by Sudarshan sir and the teaching team**
+- Anyone who endorses **more than 25 people** will be evaluated by the Teaching Team and will be issued a Silver Ticket.
+
+**14.14 How do I earn a Silver ticket?**  
+Anyone who endorses **more than 25 people** will be evaluated by the Teaching Team and will be issued a Silver Ticket.
