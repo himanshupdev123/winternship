@@ -13,11 +13,11 @@
 <meta property="og:url" content="http://localhost:4000/winternship/projects/ajrasakha/" />
 <meta property="og:site_name" content="Winternship 2025" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-01-02T18:36:18+05:30" />
+<meta property="article:published_time" content="2026-01-03T15:43:26+05:30" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Ajrasakha" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-02T18:36:18+05:30","datePublished":"2026-01-02T18:36:18+05:30","description":"Project Overview","headline":"Ajrasakha","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/winternship/projects/ajrasakha/"},"url":"http://localhost:4000/winternship/projects/ajrasakha/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-03T15:43:26+05:30","datePublished":"2026-01-03T15:43:26+05:30","description":"Project Overview","headline":"Ajrasakha","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/winternship/projects/ajrasakha/"},"url":"http://localhost:4000/winternship/projects/ajrasakha/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/winternship/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/winternship/feed.xml" title="Winternship 2025" /></head>
 <body><header class="site-header" role="banner">
@@ -87,138 +87,37 @@
   </header>
 
   <div class="post-content">
-    <h2 id="project-overview">Project Overview</h2>
+    <h2 id="project-overview"><strong>Project Overview</strong></h2>
 
-<p>Ajrasakha is an intelligent agricultural advisory platform that connects farmers with verified agricultural knowledge through an AI-powered chat interface. The system leverages a comprehensive Golden Dataset of verified agricultural Q&amp;As and Package of Practices (PoP), using vector search and semantic similarity to provide accurate, context-aware answers. When the AI cannot find relevant information, questions are automatically routed to a network of agricultural experts for human review. The platform features a sophisticated multi-level moderation system with expert performance tracking, reputation scores, and a continuous learning mechanism where verified answers are added back to the Golden Dataset.</p>
+<p>Ajrasakha connects farmers with verified agricultural knowledge through an AI-powered chat interface. The system uses a Golden Dataset of verified Q&amp;As and Package of Practices (PoP), leveraging vector search and semantic similarity for accurate answers. When AI can’t help, questions route to agricultural experts for review. The platform features multi-level moderation with expert performance tracking, reputation scores, and continuous learning where verified answers feed back into the Golden Dataset.</p>
 
-<h2 id="key-features">Key Features</h2>
+<h2 id="key-features"><strong>Key Features</strong></h2>
 
-<h3 id="for-farmers">For Farmers</h3>
-<ul>
-  <li><strong>AI Chat Interface</strong>: Natural language conversation for agricultural queries</li>
-  <li><strong>State &amp; Crop-Specific Answers</strong>: Contextualized responses based on location and crops</li>
-  <li><strong>Multi-Language Support</strong>: Regional language capabilities for wider accessibility</li>
-  <li><strong>Real-time Query Status</strong>: Track question progress through the review system</li>
-</ul>
+<p>Farmers interact through an AI chat interface that provides state and crop-specific answers in multiple regional languages. They can track their questions in real-time as they move through the review system. The Golden Dataset uses MongoDB Atlas vector search with HuggingFace embeddings (BAAI/bge-large-en-v1.5) for semantic search, automatically growing as approved expert answers get added back.</p>
 
-<h3 id="knowledge-base">Knowledge Base</h3>
-<ul>
-  <li><strong>Golden Dataset</strong>: Vector-indexed database of verified agricultural Q&amp;As with semantic search</li>
-  <li><strong>Package of Practices (PoP)</strong>: Comprehensive agricultural guidelines and best practices</li>
-  <li><strong>Vector Search</strong>: MongoDB Atlas vector search using HuggingFace embeddings (BAAI/bge-large-en-v1.5)</li>
-  <li><strong>Automatic Dataset Growth</strong>: Approved expert answers automatically added to Golden Dataset</li>
-</ul>
+<p>When AI can’t answer, questions route to agricultural specialists whose responses go through moderator review. The system tracks expert performance using reputation scores, incentives, and penalties. The analytics dashboard monitors dataset growth, expert contributions, question status distribution, moderator approval rates, and question sources.</p>
 
-<h3 id="expert--moderation-system">Expert &amp; Moderation System</h3>
-<ul>
-  <li><strong>Expert Network</strong>: Agricultural specialists provide answers for complex queries</li>
-  <li><strong>Multi-Level Review</strong>: Expert answers reviewed and approved by moderators</li>
-  <li><strong>Performance Tracking</strong>: Reputation scores, incentives, and penalties for experts</li>
-  <li><strong>Approval Workflow</strong>: Structured process ensuring quality control</li>
-</ul>
+<h2 id="technologies-used"><strong>Technologies Used</strong></h2>
 
-<h3 id="analytics-dashboard">Analytics Dashboard</h3>
-<ul>
-  <li><strong>Golden Dataset Analytics</strong>: Track dataset growth with year/month/week/day views</li>
-  <li><strong>Expert Performance Metrics</strong>: Monitor expert contributions and quality</li>
-  <li><strong>Question Status Overview</strong>: View distribution across open, in-review, and closed states</li>
-  <li><strong>Moderator Approval Rate</strong>: Track moderation efficiency</li>
-  <li><strong>Contribution Trends</strong>: Analyze question sources (Ajrasakha AI vs. Expert submissions)</li>
-</ul>
+<p>The backend uses TypeScript, Express.js, Node.js, MongoDB Atlas with Vector Search, InversifyJS for dependency injection, Firebase Authentication, and Sentry for error monitoring. The frontend is built with React, TypeScript, TanStack Router, TanStack Query, Shadcn UI, and Tailwind CSS.</p>
 
-<h2 id="technologies-used">Technologies Used</h2>
+<p>For AI/ML, the platform uses DeepSeek-R1 (70B), Qwen3 (1.7B), and GPT-OSS (20B) LLMs via Ollama, HuggingFace BAAI/bge-large-en-v1.5 for embeddings, MongoDB Atlas as the vector database, and MCP servers for structured data access. Additional services include MCP tools for Golden Dataset and FAQ access, audio processing for voice queries, and Sarvam AI API for regional languages.</p>
 
-<h3 id="backend">Backend</h3>
-<ul>
-  <li>TypeScript, Express.js, Node.js</li>
-  <li>MongoDB with Vector Search (MongoDB Atlas)</li>
-  <li>InversifyJS (Dependency Injection)</li>
-  <li>Firebase Authentication</li>
-  <li>Sentry (Error monitoring)</li>
-</ul>
+<h2 id="system-architecture"><strong>System Architecture</strong></h2>
 
-<h3 id="frontend">Frontend</h3>
-<ul>
-  <li>React with TypeScript</li>
-  <li>TanStack Router (File-based routing)</li>
-  <li>TanStack Query (React Query)</li>
-  <li>Shadcn UI components</li>
-  <li>Tailwind CSS</li>
-</ul>
+<p>When farmers submit questions, the system detects context (state and crop information) and searches the Golden Dataset using vector search. If no match exists, it searches the Package of Practices database. Still no answer? The question routes to agricultural experts who provide responses with metadata. Moderators review and approve the best answer, which gets added to the Golden Dataset. The farmer receives a notification when their answer is ready.</p>
 
-<h3 id="aiml">AI/ML</h3>
-<ul>
-  <li><strong>LLM Models</strong>: DeepSeek-R1 (70B), Qwen3 (1.7B), GPT-OSS (20B) via Ollama</li>
-  <li><strong>Embeddings</strong>: HuggingFace BAAI/bge-large-en-v1.5</li>
-  <li><strong>Vector Database</strong>: MongoDB Atlas with vector indexing</li>
-  <li><strong>MCP Servers</strong>: Model Context Protocol for structured data access</li>
-</ul>
+<p>The platform serves four user types: Farmers (submit questions, receive answers), Experts (answer routed questions, earn reputation), Moderators (review and approve expert answers), and Admins (system management).</p>
 
-<h3 id="additional-services">Additional Services</h3>
-<ul>
-  <li>MCP (Model Context Protocol) tools for Golden Dataset and FAQ access</li>
-  <li>Audio processing for voice queries</li>
-  <li>Sarvam AI API integration</li>
-</ul>
+<h2 id="data-structure"><strong>Data Structure</strong></h2>
 
-<h2 id="system-architecture">System Architecture</h2>
+<p>The Golden Dataset stores question-answer pairs with embeddings, metadata (state, crop, season, domain, specialist, sources), similarity scores, and verification status. Expert performance tracking includes reputation scores, incentive tracking, penalty tracking, and response quality metrics.</p>
 
-<h3 id="query-processing-workflow">Query Processing Workflow</h3>
+<h2 id="project-goals"><strong>Project Goals</strong></h2>
 
-<ol>
-  <li><strong>User Query Submission</strong>: Farmer asks question via chat interface</li>
-  <li><strong>Context Detection</strong>: System identifies user’s state and crop information</li>
-  <li><strong>Golden Dataset Search</strong>: Vector search finds semantically similar Q&amp;As</li>
-  <li><strong>PoP Search</strong>: If no match, searches Package of Practices database</li>
-  <li><strong>Expert Routing</strong>: If still no answer, question sent to agricultural experts</li>
-  <li><strong>Expert Response</strong>: Multiple experts provide answers with metadata</li>
-  <li><strong>Moderator Review</strong>: Moderators approve and select best answer</li>
-  <li><strong>Dataset Update</strong>: Approved Q&amp;A added to Golden Dataset</li>
-  <li><strong>Farmer Notification</strong>: Answer delivered to farmer</li>
-</ol>
+<p>Ajrasakha provides instant agricultural guidance using AI while building a comprehensive knowledge base that grows smarter over time. The platform connects farmers with experts for complex queries, implements multi-level quality control, and tracks expert contributions through incentives. It delivers state and crop-specific advice in regional languages, creating a self-improving knowledge base that helps identify common agricultural challenges.</p>
 
-<h3 id="user-roles">User Roles</h3>
-
-<ul>
-  <li><strong>Farmers</strong>: Submit questions, receive answers</li>
-  <li><strong>Experts</strong>: Answer routed questions, earn reputation scores</li>
-  <li><strong>Moderators</strong>: Review and approve expert answers</li>
-  <li><strong>Admins</strong>: System management and oversight</li>
-</ul>
-
-<h2 id="data-structure">Data Structure</h2>
-
-<h3 id="golden-dataset">Golden Dataset</h3>
-<ul>
-  <li>Question-Answer pairs with embeddings</li>
-  <li>Metadata: State, crop, season, domain, agri specialist, sources</li>
-  <li>Similarity scores for retrieval</li>
-  <li>Verification status</li>
-</ul>
-
-<h3 id="expert-performance">Expert Performance</h3>
-<ul>
-  <li>Reputation scores</li>
-  <li>Incentive tracking</li>
-  <li>Penalty tracking</li>
-  <li>Response quality metrics</li>
-</ul>
-
-<h2 id="project-goals">Project Goals</h2>
-
-<ol>
-  <li>Provide instant, accurate agricultural guidance to farmers using AI</li>
-  <li>Build and maintain comprehensive Golden Dataset of verified agricultural knowledge</li>
-  <li>Connect farmers with agricultural experts for complex queries</li>
-  <li>Implement quality control through multi-level moderation</li>
-  <li>Track and incentivize expert contributions</li>
-  <li>Enable state and crop-specific agricultural advice</li>
-  <li>Support regional languages for broader farmer reach</li>
-  <li>Create self-improving knowledge base through continuous expert contributions</li>
-  <li>Provide analytics and insights on agricultural query patterns</li>
-</ol>
-
-<h2 id="github-repository">GitHub Repository</h2>
+<h2 id="github-repository"><strong>GitHub Repository</strong></h2>
 
 <p><a href="https://github.com/vicharanashala/ajrasakha">Ajrasakha</a></p>
 

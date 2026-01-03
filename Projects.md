@@ -11,7 +11,7 @@ permalink: /projects/
 </div>
 
 {% assign projects = site.projects | sort: "order" %}
-{% assign project_colors = "FF9800,3B82F6,A7F3D0,8B5CF6,059669,FFFF00" | split: "," %}
+{% assign project_colors = "FF9800,3B82F6,A7F3D0,8B5CF6,059669,FFFF00,FF6B6B" | split: "," %}
 
 {% for project in projects %}
 {% assign color = project_colors[forloop.index0] %}
@@ -24,10 +24,10 @@ permalink: /projects/
     
     <div style="padding: 2rem; background-color: white;">
       <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f6f8fa; border-radius: 8px; border-left: 4px solid #{{ color }};">
-        <p style="margin: 0; color: #586069; font-size: 1rem;"><strong>Summary:</strong> {{ project.summary }}</p>
+        <p style="margin: 0; color: #586069; font-size: 1rem; text-align: justify;"><strong>Summary:</strong> {{ project.summary }}</p>
       </div>
       
-      <div style="prose max-width: none;">
+      <div style="prose max-width: none; text-align: justify;">
         {{ project.content }}
       </div>
     </div>
@@ -86,6 +86,7 @@ permalink: /projects/
     margin: 1rem 0;
     color: #24292e;
     line-height: 1.7;
+    text-align: justify;
   }
   
   details div.prose strong {

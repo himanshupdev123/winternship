@@ -5,70 +5,35 @@ order: 4
 summary: Multi-level peer assessment system with automated anomaly detection and escalation workflow
 ---
 
+## **Project Overview**
 
-## Project Overview
+Peer Evaluation is an intelligent assessment system facilitating peer-to-peer evaluation with built-in quality control. The system assigns unique IDs to each student per quiz, ensuring anonymity and security. QR codes are generated only when teachers use bulk download for later PDF uploads. When students upload directly via portal, unique IDs generate automatically without QR codes. Algorithm-based anomaly detection flags issues to Teaching Assistants, who can escalate to teachers, maintaining academic integrity throughout.
 
-Peer Evaluation is an intelligent assessment management system that facilitates peer-to-peer evaluation of quizzes and assessments with built-in quality control mechanisms. The system assigns unique IDs to each student for every quiz/assessment, ensuring anonymity and security. QR codes are generated from these unique IDs only when teachers use the bulk download option for later uploading bulk PDFs. When students upload their quizzes directly from their portal, unique IDs are generated automatically without QR codes. The system features a sophisticated multi-level review workflow where anomalies detected by algorithm-based analysis are automatically flagged to Teaching Assistants (TAs), who can escalate unresolved issues to teachers, maintaining academic integrity throughout the evaluation process.
+## **Key Features**
 
-## Key Features
+The platform automatically generates unique IDs for anonymous evaluation. Teachers choose between bulk download with QR codes for offline distribution or direct student portal uploads with auto-generated IDs. Students evaluate peers anonymously while algorithm-based detection identifies suspicious patterns and statistical outliers. The multi-level escalation workflow moves from peer reviews to automated detection to TA review to teacher intervention.
 
-- **Unique ID System**: Automatic unique ID generation for each student per quiz/assessment
-- **Dual Submission Methods**:
-  - **Bulk Download**: Teacher downloads unique IDs with QR codes for offline distribution and bulk PDF upload
-  - **Student Portal Upload**: Students upload directly via portal with auto-generated unique IDs (no QR codes needed)
-- **Peer Review System**: Students evaluate their peers' work anonymously
-- **Algorithm-Based Anomaly Detection**: Automated detection of suspicious patterns, inconsistencies, and outliers
-- **Multi-Level Escalation Workflow**: 
-  - Student peer reviews → System anomaly detection → TA review → Teacher intervention
-- **TA Dashboard**: Interface for TAs to review flagged submissions and resolve issues
-- **Teacher Portal**: Final escalation point for complex cases requiring instructor attention
-- **Rubric-Based Evaluation**: Standardized criteria for consistent assessment
-- **Analytics and Reporting**: Comprehensive insights on evaluation patterns and quality
-- **Feedback Management**: Structured peer feedback with quality controls
-- **Rating Aggregation**: Statistical analysis to ensure fair final grades
-- **Audit Trail**: Complete tracking of evaluation and escalation history
+TAs review flagged submissions through their dashboard, while teachers handle final escalation for complex cases. Rubric-based evaluation ensures consistency. The platform provides comprehensive analytics on evaluation patterns, manages structured feedback with quality controls, and uses statistical analysis for fair rating aggregation. Complete audit trails track the entire process.
 
-## Technologies Used
+## **Technologies Used**
 
-- Frontend: React, Javascript
-- Backend: Express.js, Node.js
-- Database: MongoDB
-- QR Code Generation: QR code libraries
-- Anomaly Detection: Statistical outlier detection algorithms (Standard Deviation, etc.)
-- Authentication: JWT/OAuth
+Frontend: React, Javascript. Backend: Express.js, Node.js. Database: MongoDB. QR code libraries for unique code generation. Statistical outlier detection algorithms (standard deviation analysis, etc.) for anomaly detection. Authentication: JWT/OAuth.
 
-## Evaluation Workflow
+## **Evaluation Workflow**
 
-### Submission Path 1: Bulk Download (with QR Codes)
-1. **Assessment Creation**: Teacher creates quiz/assessment with evaluation rubrics
-2. **Bulk Download**: Teacher downloads unique IDs with QR codes for each student
-3. **Offline Distribution**: Students receive printed assessments with QR codes
-4. **Bulk Upload**: Teacher uploads scanned PDFs linked to QR codes
-5. **Peer Evaluation**: Students anonymously evaluate assigned peer submissions
+### Bulk Download Path
+Teacher creates assessment with rubrics, downloads unique IDs with QR codes, distributes printed assessments, then scans and uploads PDFs. System links PDFs to student IDs via QR codes. Students evaluate assigned peer submissions anonymously.
 
-### Submission Path 2: Student Portal Upload (without QR Codes)
-1. **Assessment Creation**: Teacher creates quiz/assessment with evaluation rubrics
-2. **Student Upload**: Students upload their quiz directly from their portal
-3. **Auto ID Generation**: System automatically generates unique IDs (no QR codes)
-4. **Peer Evaluation**: Students anonymously evaluate assigned peer submissions
+### Student Portal Upload Path
+Teacher creates assessment with rubrics. Students upload directly from portal. System auto-generates unique IDs without QR codes. Students evaluate assigned peer submissions anonymously.
 
-### Common Workflow (Both Paths)
-5. **Algorithm-Based Analysis**: System analyzes evaluations for anomalies (bias, inconsistencies, outliers)
-6. **TA Review**: Flagged cases are sent to TAs for investigation
-7. **Teacher Escalation**: Unresolved cases are escalated to teachers for final decision
-8. **Marks Finalization**: Validated evaluations are aggregated for final marks
+### Common Workflow
+System runs algorithm-based analysis for anomalies. Flagged cases go to TAs for investigation. Complex cases escalate to teachers. Validated evaluations aggregate using statistical methods for fair final marks.
 
-## Project Goals
+## **Project Goals**
 
-1. Implement fair and transparent multi-level evaluation system
-2. Ensure anonymity through unique ID-based identification
-3. Support flexible submission methods (bulk upload with QR codes or student portal)
-4. Automate detection of evaluation anomalies using robust algorithms
-5. Create efficient escalation workflow (Peers → System → TAs → Teachers)
-6. Generate comprehensive analytics on evaluation quality
-7. Maintain academic integrity throughout the assessment process
-8. Provide actionable insights for continuous improvement
+The project implements a fair, transparent multi-level evaluation system ensuring accurate assessment. Anonymity is achieved through unique ID-based identification. The platform supports flexible submission methods (bulk upload or student portal) and automates anomaly detection using statistical algorithms. The efficient escalation workflow ensures issues are handled at appropriate levels. Comprehensive analytics help instructors understand evaluation quality, while multiple checkpoints maintain academic integrity. The system provides actionable insights for continuous improvement.
 
-## GitHub Repository
+## **GitHub Repository**
 
 [PES](https://github.com/vicharanashala/pes)

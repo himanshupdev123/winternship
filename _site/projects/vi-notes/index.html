@@ -3,21 +3,21 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Peer Evaluation | Winternship 2025</title>
+<title>Vi-Notes | Winternship 2025</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Peer Evaluation" />
+<meta property="og:title" content="Vi-Notes" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Project Overview" />
 <meta property="og:description" content="Project Overview" />
-<link rel="canonical" href="http://localhost:4000/winternship/projects/peer-evaluation/" />
-<meta property="og:url" content="http://localhost:4000/winternship/projects/peer-evaluation/" />
+<link rel="canonical" href="http://localhost:4000/winternship/projects/vi-notes/" />
+<meta property="og:url" content="http://localhost:4000/winternship/projects/vi-notes/" />
 <meta property="og:site_name" content="Winternship 2025" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2026-01-03T15:43:26+05:30" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Peer Evaluation" />
+<meta property="twitter:title" content="Vi-Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-03T15:43:26+05:30","datePublished":"2026-01-03T15:43:26+05:30","description":"Project Overview","headline":"Peer Evaluation","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/winternship/projects/peer-evaluation/"},"url":"http://localhost:4000/winternship/projects/peer-evaluation/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-01-03T15:43:26+05:30","datePublished":"2026-01-03T15:43:26+05:30","description":"Project Overview","headline":"Vi-Notes","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/winternship/projects/vi-notes/"},"url":"http://localhost:4000/winternship/projects/vi-notes/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/winternship/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/winternship/feed.xml" title="Winternship 2025" /></head>
 <body><header class="site-header" role="banner">
@@ -51,6 +51,12 @@
     
   
     
+  
+    
+  
+    
+  
+    
       
       
 
@@ -61,7 +67,7 @@
         
           
           
-          <a href="/winternship/projects/ddd/" style="text-decoration:none; font-size:1.1em;">
+          <a href="/winternship/projects/vi-slides/" style="text-decoration:none; font-size:1.1em;">
             ←
           </a>
         
@@ -69,54 +75,45 @@
       <div style="flex:1; text-align:right;">
         
         
-          
-          
-          <a href="/winternship/projects/ajrasakha/" style="text-decoration:none; font-size:1.1em;">
-            →
-          </a>
-        
       </div>
     </nav>
   
 
   <header class="post-header">
-    <h1 class="post-title">Peer Evaluation</h1>
-    <p class="post-description">Multi-level peer assessment system with automated anomaly detection and escalation workflow</p>
+    <h1 class="post-title">Vi-Notes</h1>
+    <p class="post-description">Authenticity verification platform that ensures genuine human writing through keyboard activity monitoring and statistical signature analysis</p>
   </header>
 
   <div class="post-content">
     <h2 id="project-overview"><strong>Project Overview</strong></h2>
 
-<p>Peer Evaluation is an intelligent assessment system facilitating peer-to-peer evaluation with built-in quality control. The system assigns unique IDs to each student per quiz, ensuring anonymity and security. QR codes are generated only when teachers use bulk download for later PDF uploads. When students upload directly via portal, unique IDs generate automatically without QR codes. Algorithm-based anomaly detection flags issues to Teaching Assistants, who can escalate to teachers, maintaining academic integrity throughout.</p>
+<p>Vi-Notes verifies human-written content authenticity by monitoring writing in real-time. Users write freely while the platform captures keyboard activity patterns, typing rhythm, editing behaviors, and statistical signatures that distinguish genuine human composition from AI-generated or AI-assisted text.</p>
 
 <h2 id="key-features"><strong>Key Features</strong></h2>
 
-<p>The platform automatically generates unique IDs for anonymous evaluation. Teachers choose between bulk download with QR codes for offline distribution or direct student portal uploads with auto-generated IDs. Students evaluate peers anonymously while algorithm-based detection identifies suspicious patterns and statistical outliers. The multi-level escalation workflow moves from peer reviews to automated detection to TA review to teacher intervention.</p>
+<p>The platform provides a distraction-free writing interface with silent background monitoring capturing typing speed, pause patterns, deletions, and composition rhythm. The keyboard monitoring tracks micro-patterns like hesitations before sentences, corrections during idea refinement, and variable typing speeds that reflect natural thinking processes.</p>
 
-<p>TAs review flagged submissions through their dashboard, while teachers handle final escalation for complex cases. Rubric-based evaluation ensures consistency. The platform provides comprehensive analytics on evaluation patterns, manages structured feedback with quality controls, and uses statistical analysis for fair rating aggregation. Complete audit trails track the entire process.</p>
+<p>Statistical analysis examines linguistic patterns, vocabulary diversity, sentence structure variations, and stylistic consistency. AI-generated text exhibits regularities like excessive consistency in sentence length or uniform vocabulary distribution that mismatch keyboard activity. After each session, Vi-Notes generates authenticity reports with confidence scores, suspicious patterns, and supporting evidence. Users share these reports to prove authorship in academic, professional, or publishing contexts. Real-time feedback flags unusual patterns like pasted text chunks or non-human typing behaviors.</p>
 
 <h2 id="technologies-used"><strong>Technologies Used</strong></h2>
 
-<p>Frontend: React, Javascript. Backend: Express.js, Node.js. Database: MongoDB. QR code libraries for unique code generation. Statistical outlier detection algorithms (standard deviation analysis, etc.) for anomaly detection. Authentication: JWT/OAuth.</p>
+<p>Frontend: React, TypeScript, Electron for native desktop apps accessing keyboard events. Backend: Node.js, Express.js. OS-level APIs capture keystroke timing and patterns. ML models (TensorFlow, PyTorch) use supervised learning on human vs. AI text and unsupervised anomaly detection. NLP models analyze statistical signatures. MongoDB stores sessions, keystroke data, and reports with privacy-preserving encryption.</p>
 
-<h2 id="evaluation-workflow"><strong>Evaluation Workflow</strong></h2>
+<h2 id="detection-methods"><strong>Detection Methods</strong></h2>
 
-<h3 id="bulk-download-path">Bulk Download Path</h3>
-<p>Teacher creates assessment with rubrics, downloads unique IDs with QR codes, distributes printed assessments, then scans and uploads PDFs. System links PDFs to student IDs via QR codes. Students evaluate assigned peer submissions anonymously.</p>
+<p>The system identifies behavioral patterns difficult for AI to replicate: natural sentence pauses, real-time corrections, variable typing speed based on cognitive load, and micro-pauses at punctuation. These signatures compare against known human patterns.</p>
 
-<h3 id="student-portal-upload-path">Student Portal Upload Path</h3>
-<p>Teacher creates assessment with rubrics. Students upload directly from portal. System auto-generates unique IDs without QR codes. Students evaluate assigned peer submissions anonymously.</p>
+<p>Text analysis reveals origin clues through variation in sentence length and structure, idiosyncratic vocabulary choices, and correlation between writing complexity and revision frequency. Human writers revise complex sections more than simple ones; AI-pasted text shows no such correlation.</p>
 
-<h3 id="common-workflow">Common Workflow</h3>
-<p>System runs algorithm-based analysis for anomalies. Flagged cases go to TAs for investigation. Complex cases escalate to teachers. Validated evaluations aggregate using statistical methods for fair final marks.</p>
+<p>Cross-referencing behavioral data with textual patterns provides the strongest verification. Paragraphs appearing without keystroke data, suspiciously constant typing speeds, or mismatched statistical signatures flag potential AI involvement.</p>
 
 <h2 id="project-goals"><strong>Project Goals</strong></h2>
 
-<p>The project implements a fair, transparent multi-level evaluation system ensuring accurate assessment. Anonymity is achieved through unique ID-based identification. The platform supports flexible submission methods (bulk upload or student portal) and automates anomaly detection using statistical algorithms. The efficient escalation workflow ensures issues are handled at appropriate levels. Comprehensive analytics help instructors understand evaluation quality, while multiple checkpoints maintain academic integrity. The system provides actionable insights for continuous improvement.</p>
+<p>Vi-Notes restores trust in written content through reliable authorship verification, helping educators ensure academic integrity and enabling writers to prove authenticity. The platform develops accurate detection algorithms distinguishing human writing from various AI assistance levels while maintaining strict privacy protection. The system adapts continuously as AI writing tools evolve, staying ahead of new techniques attempting to mimic human writing patterns.</p>
 
 <h2 id="github-repository"><strong>GitHub Repository</strong></h2>
 
-<p><a href="https://github.com/vicharanashala/pes">PES</a></p>
+<p><a href="https://github.com/vicharanashala/">Vi-Notes (TBD)</a></p>
 
   </div>
 
@@ -135,6 +132,12 @@
     
   
     
+  
+    
+  
+    
+  
+    
       
       
 
@@ -145,19 +148,13 @@
         
           
           
-          <a href="/winternship/projects/ddd/" style="text-decoration:none; font-size:1.1em;">
+          <a href="/winternship/projects/vi-slides/" style="text-decoration:none; font-size:1.1em;">
             ←
           </a>
         
       </div>
       <div style="flex:1; text-align:right;">
         
-        
-          
-          
-          <a href="/winternship/projects/ajrasakha/" style="text-decoration:none; font-size:1.1em;">
-            →
-          </a>
         
       </div>
     </nav>

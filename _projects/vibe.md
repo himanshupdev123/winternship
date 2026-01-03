@@ -5,38 +5,80 @@ order: 1
 summary: AI-proctored video-based Learning Management System
 ---
 
+## **Project Overview**
 
-## Project Overview
+ViBe is a comprehensive Learning Management System revolutionizing education through video-based and multimedia content delivery. The platform integrates AI-powered proctoring to ensure academic integrity while providing an engaging, interactive learning environment. ViBe combines online learning flexibility with security and monitoring features necessary for assessments and examinations.
 
-ViBe is a comprehensive Learning Management System (LMS) that revolutionizes education through video-based and multimedia content delivery. The platform integrates AI-powered proctoring capabilities to ensure academic integrity while providing an engaging, interactive learning environment. ViBe combines the flexibility of online learning with the security and monitoring features necessary for assessments and examinations.
+## **Key Features**
 
-## Key Features
+ViBe delivers rich multimedia content through interactive video modules forming the core learning experience. AI proctoring uses facial recognition and behavior analysis to automatically monitor exams, ensuring integrity without human proctors. The course management system handles everything from course creation and student enrollment to detailed progress tracking.
 
-- **Video-Based Learning**: Rich multimedia content delivery with interactive video modules
-- **AI Proctoring**: Automated exam monitoring using facial recognition and behavior analysis
-- **Course Management**: Complete LMS functionality for course creation, enrollment, and tracking
-- **Assessment Tools**: Quizzes, assignments, and examinations with automated grading
-- **Progress Analytics**: Comprehensive tracking of student performance and engagement
-- **Secure Examination**: AI-monitored testing environment to prevent cheating
-- **Student Dashboard**: Personalized learning portal with progress visualization
-- **Instructor Tools**: Content creation, student management, and grading interface
+Assessment tools cover the full spectrum—quizzes, assignments, and examinations—with automated grading providing immediate feedback. Progress analytics give students and instructors detailed visibility into performance and engagement patterns. During examinations, AI-monitored testing environments actively prevent cheating. Students access everything through a personalized dashboard visualizing their progress. Instructors have tools for content creation, student management, and grading integrated into a single streamlined interface.
 
-## Technologies Used
+## **Technologies Used**
 
-- Frontend: React, TypeScript
-- Backend: Express.js, Node.js
-- Database: MongoDB
-- AI Proctoring: Computer Vision, Deep Learning models
+Frontend: React, TypeScript. Backend: Express.js, Node.js. Database: MongoDB. AI Proctoring: Computer vision and deep learning models detecting unusual eye movements, multiple faces, and prohibited materials.
 
-## Project Goals
+## **Project Goals**
 
-1. Build a full-featured LMS with video-first approach
-2. Implement reliable AI proctoring for secure assessments
-3. Create intuitive interfaces for students and instructors
-4. Ensure scalable video content delivery
-5. Provide comprehensive analytics and reporting
-6. Maintain academic integrity through automated monitoring
+ViBe builds a full-featured LMS with a video-first approach, recognizing video as the most engaging way to deliver educational material. Implementing reliable AI proctoring addresses a major online education challenge—maintaining exam integrity without human proctors. The platform creates intuitive interfaces ensuring technology enhances rather than hinders learning. Scalable video content delivery handles growing numbers of students and courses without performance degradation. Comprehensive analytics provide actionable insights into learning progress. Maintaining academic integrity through automated monitoring ensures certifications and grades carry real weight and credibility.
 
-## GitHub Repository
+## **GitHub Repository**
 
 [ViBe](https://github.com/vicharanashala/vibe)
+
+## **Upcoming Features**
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Filter Users by Role</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Filter students and instructors by their roles for easier management and bulk actions. This feature enables teachers to quickly identify and take actions on specific user groups.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/605" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #605 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Profile Picture Edit Option</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Enable users to edit and update their profile pictures directly from the profile page, enhancing personalization and user experience.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/596" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #596 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Forgot Password / Remember Password</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Implement password recovery functionality and "remember me" option to improve authentication convenience and security.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/594" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #594 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Password Visibility Toggle</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Add a toggle button allowing users to show or hide their password while typing, improving usability during login and signup.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/591" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #591 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Return to Video from Quiz</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Allow students to navigate back to the video from quiz screens, providing flexibility to review content before answering questions.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/561" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #561 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; font-weight: 600; list-style: none;">&nbsp;Engagement Games</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Interactive games integrated into the learning experience to boost student engagement and motivation through gamified learning activities.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/545" target="_blank" style="color: #FF9800; font-weight: 600; text-decoration: none;">View Feature Request #545 →</a>
+</div>
+</details>

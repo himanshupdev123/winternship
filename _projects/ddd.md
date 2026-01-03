@@ -5,49 +5,73 @@ order: 3
 summary: Dopamine Driven Dashboard - Integrated performance and engagement analytics across all projects
 ---
 
+## **Project Overview**
 
-## Project Overview
+DDD is a comprehensive performance and engagement dashboard that provides real-time insights into user activity, progress, and achievements across the entire platform. Rather than being standalone, DDD integrates into all other projects (ViBe, Spandan, Peer Evaluation), providing unified analytics that motivates users through gamification and visual feedback.
 
-DDD is a comprehensive performance and engagement dashboard that provides real-time insights into user activity, progress, and achievements across the entire platform. Rather than being a standalone application, DDD is seamlessly integrated into all other projects (ViBe, Spandan, Peer Evaluation), providing a unified analytics experience that motivates and tracks user engagement through gamification and visual feedback.
+## **Key Features**
 
-## Key Features
+DDD delivers real-time performance tracking with interactive charts and data visualizations. Users earn achievements, build streaks, and progress through levels as they engage with platform features. Progress indicators and milestones show users how far they've come and what they're working toward. The system provides personalized insights tailored to each user's activity patterns, along with motivational feedback and rewards that sustain engagement.
 
-- Real-time performance tracking and analytics
-- User engagement metrics and visualization
-- Gamification elements (achievements, streaks, levels)
-- Progress indicators and milestones
-- Interactive data visualizations and charts
-- Personalized performance insights
-- Motivational feedback and rewards system
+## **Technologies Used**
 
-## Technologies Used
+Built with React and TypeScript on the frontend, Express.js and Node.js on the backend, and MongoDB for data storage. Chart.js and D3.js power the interactive visualizations.
 
-- Frontend: React, TypeScript
-- Backend: Express.js, Node.js
-- Database: MongoDB
-- Data Visualization: Chart.js / D3.js
+## **Integration Approach**
 
-## Integration Approach
+DDD embeds as a modular component within each project. In ViBe, it tracks video engagement, completion rates, and learning patterns. In Spandan, it monitors class participation, question responses, and interaction frequency. For Peer Evaluation, it analyzes evaluation activity, feedback quality, and review completeness.
 
-DDD is embedded as a modular component within each project:
-- **ViBe**: Tracks video engagement, completion rates, learning patterns
-- **Spandan**: Monitors class participation, question responses, interaction frequency
-- **Peer Evaluation**: Analyzes evaluation activity, feedback quality, review completeness
+## **Project Goals**
 
-## Project Goals
+DDD creates a unified dashboard bringing together all user activities across platforms. Through engaging gamification mechanics, it keeps users motivated while providing actionable performance insights. The system enables cross-project analytics, allowing users and administrators to see patterns spanning multiple applications.
 
-1. Create unified dashboard for all user activities
-2. Implement engaging gamification mechanics
-3. Provide actionable insights on performance
-4. Motivate continuous user engagement
-5. Enable cross-project analytics and reporting
+## **GitHub Repositories**
 
-## GitHub Repositories
+The main repository is at [DDD](https://github.com/vicharanashala/ddd). Project-specific implementations live in [ViBe(DDD)](https://github.com/vicharanashala/vibe), [Spandan(DDD)](https://github.com/vicharanashala/poll-question-gen), and [Peer Evaluation(DDD)](https://github.com/vicharanashala/pes).
 
-- ### Main DDD Repository
-[DDD](https://github.com/vicharanashala/ddd)
+## **Upcoming Features**
 
-- ### Project-Specific Implementations
-    - **ViBe Integration**: [ViBe(DDD)](https://github.com/vicharanashala/vibe)
-    - **Spandan Integration**: [Spandan(DDD)](https://github.com/vicharanashala/poll-question-gen)
-    - **Peer Evaluation Integration**: [Peer Evaluation(DDD)](https://github.com/vicharanashala/pes)
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #A7F3D020 0%, #A7F3D040 100%); border-left: 6px solid #A7F3D0; font-weight: 600; list-style: none;">&nbsp;Teacher Dashboard for Student Performance Monitoring (Spandan)</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Comprehensive teacher dashboard providing real-time visibility into student engagement, performance trends, point distribution, and achievement progress. Features include session overview, student performance views with sorting/filtering, question analytics, points visibility, achievements monitoring, and post-session summaries. The dashboard updates in real-time during live sessions with read-only access for cohosts.
+<br><br>
+<a href="https://github.com/vicharanashala/poll-question-gen/issues/22" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">View Feature Request #22 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #A7F3D020 0%, #A7F3D040 100%); border-left: 6px solid #A7F3D0; font-weight: 600; list-style: none;">&nbsp;Student Dashboard - Performance & Achievement Overview (Spandan)</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Centralized student dashboard showing performance summary, achievement showcase, question interaction history, and session analytics. Displays total points earned, session-wise breakdowns, accuracy percentages, badges earned, and upcoming achievements. Updates in near real-time during live sessions with full analytics available after completion.
+<br><br>
+<a href="https://github.com/vicharanashala/poll-question-gen/issues/21" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">View Feature Request #21 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #A7F3D020 0%, #A7F3D040 100%); border-left: 6px solid #A7F3D0; font-weight: 600; list-style: none;">&nbsp;Module-wise Dashboard (ViBe)</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Comprehensive teacher dashboard showing analytics and insights organized by individual course modules, enabling granular performance tracking.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/538" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">View Feature Request #538 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #A7F3D020 0%, #A7F3D040 100%); border-left: 6px solid #A7F3D0; font-weight: 600; list-style: none;">&nbsp;Quiz-wise Dashboard (ViBe)</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Detailed teacher dashboard displaying quiz-specific analytics including student performance, question difficulty, and completion rates per quiz.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/537" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">View Feature Request #537 →</a>
+</div>
+</details>
+
+<details style="margin-bottom: 1.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+<summary style="cursor: pointer; padding: 1rem 1.5rem; background: linear-gradient(135deg, #A7F3D020 0%, #A7F3D040 100%); border-left: 6px solid #A7F3D0; font-weight: 600; list-style: none;">&nbsp;Section-wise Dashboard (ViBe)</summary>
+<div style="padding: 1.5rem; background-color: white;">
+Teacher dashboard organized by course sections, providing insights into section-level performance and progress tracking.
+<br><br>
+<a href="https://github.com/vicharanashala/vibe/issues/529" target="_blank" style="color: #059669; font-weight: 600; text-decoration: none;">View Feature Request #529 →</a>
+</div>
+</details>
