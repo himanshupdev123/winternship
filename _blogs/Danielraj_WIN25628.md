@@ -1,8 +1,8 @@
----------------------------------------------------------------------------------------------------------------------------------------------------------------
-TITLE:"MY FIRST INTERNSHIP JOURNEY"
-AUTHOR:DANIEL RAJ.S
-NPTEL_ID:WIN25628
----------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+title: "MY FIRST INTERNSHIP JOURNEY"
+author: DANIEL RAJ.S
+nptel_id: WIN25628
+---
 
 This is my first internship, and it is also a virtual one. But more than that, it is an experience that completely reshaped my understanding of what an internship should truly be.
 Many internships today feel more like short-term classes. A teacher explains concepts, gives a few examples, and at the end, a certificate is handed over. Learning happens, but the real industry exposure often feels missing.

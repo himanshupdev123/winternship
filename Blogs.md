@@ -30,7 +30,7 @@ What we **are looking for** is your lived experience—your doubts, your growth,
 
 #### **Review, Feedback, and Publication**
 
-All submitted blogs will be **reviewed by the VLED Lab team**. You will receive **comments and suggestions to help you improve your writing and clarity**. This is part of the learning process—we see writing as something that evolves through feedback, just like code.
+Your blog should first appear on your LinkedIn profile under the article section. You should tag VLED lab and it's members in your article. If we found the article interesting, inspiring and aligning with the Winternship. We will select your submitted blog and it will be **reviewed by the VLED Lab team**. You will receive **comments and suggestions to help you improve your writing and clarity**. This is part of the learning process—we see writing as something that evolves through feedback, just like code.
 
 Blogs that are selected after review will be **published on the Winternship website under the Blogs section**. Additionally, **selected blogs will be recognised for their** thoughtful reflection, originality, and authenticity.
 

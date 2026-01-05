@@ -1,8 +1,8 @@
-------------------------------------------------------------------------------------------------------------------
-TITLE    : " FROM ENDURING TO EXPERIENCING: My first virtual internship journey"
-AUTHOR   : Gunavarthini Gopal
-NPTEL_ID : WIN25627
-------------------------------------------------------------------------------------------------------------------
+---
+title: "FROM ENDURING TO EXPERIENCING: My first virtual internship journey"
+author: Gunavarthini Gopal
+nptel_id: WIN25627
+---
 
 "FROM ENDURING TO EXPERIENCING":
 
