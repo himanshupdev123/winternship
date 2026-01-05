@@ -1,5 +1,5 @@
 ---
-title: "Trusting the growth process"
+title: "Learning to trust the process"
 author: Divya Chhabra
 nptel_id: WIN25300
 ---
@@ -24,7 +24,9 @@ This journey didn’t just teach me what to learn, it taught me how to approach 
 
 I am grateful to the entire mentor team for creating a learning space that encouraged growth, reflection, and meaningful engagement throughout this journey 💗.
 
+“Growth happens quietly, when you stop asking when and start trusting how.”
+
 ---
 
 Author: [Divya Chhabra](https://www.linkedin.com/in/DivyaChhabraa)  
-LinkedIn Article: [Read on LinkedIn](https://www.linkedin.com/in/DivyaChhabraa)
+LinkedIn Article: [Read on LinkedIn](https://www.linkedin.com/pulse/learning-trust-process-divya-chhabra-1i3cc)
