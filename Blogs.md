@@ -36,9 +36,9 @@ Blogs that are selected after review will be **published on the Winternship webs
 
 #### **Submission Instructions**
 
-You are required to write your blog in **Markdown format** and push it to the **Winternship** GitHub repository as a new pull request. Your blog will be rendered as a webpage, so ensure it is readable, well-structured, and personal. Follow the folder structure and naming conventions provided below. Each blog must be written individually and should reflect your own journey.
+You are first required to publish your blog on your LinkedIn under the [Article](https://www.linkedin.com/article/new/){:target="_blank"} section and then you are required to submit your blog as **Markdown file** to **Winternship** GitHub repository as a new pull request. Your blog will be rendered as a webpage, so ensure it is readable, well-structured, and personal. Follow the folder structure, naming conventions, and file structure provided below. Each blog must be written individually and should reflect your own journey.
 
-***Repository:*** [https://github.com/sudarshansudarshan/winternship](https://github.com/sudarshansudarshan/winternship)
+***Repository:*** [https://github.com/sudarshansudarshan/winternship](https://github.com/sudarshansudarshan/winternship){:target="_blank"}
 
 ***Folder Structure:*** Place your blog in the `_blogs/` folder.
 
@@ -54,7 +54,16 @@ author: Your Full Name
 nptel_id: YOUR_NPTEL_ID
 ---
 ```
-*Note: If your title contains special characters like colons (:), wrap it in double quotes.*
+
+Your blog must end with the following structure:
+```markdown
+---
+
+Author: [Your Full Name](https://www.linkedin.com/in/your-linkedin-profile/)  
+LinkedIn Article: [Read on LinkedIn](https://www.linkedin.com/your-article-link/)
+```
+
+*Note: If your blog title contains special characters like colons (:), wrap it in double quotes.*
 
 *Example:*
 ```markdown
@@ -64,7 +73,12 @@ author: Mohit Kumar
 nptel_id: NPTEL12345
 ---
 
-Your blog content starts here...
+Your blog content here...
+
+---
+
+Author: [Mohit Kumar](https://www.linkedin.com/in/mohit-kumar/)  
+LinkedIn Article: [Read on LinkedIn](https://www.linkedin.com/my-learning-journey-reflections-growth-mohit-kumar/)
 ```
 
 <br>
