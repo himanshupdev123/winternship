@@ -4,11 +4,7 @@ author: Bontha Harika
 nptel_id: WIN25535
 ---
 
----
-
-Author: [Bontha Harika](https://www.linkedin.com/in/bontha-harika-0253a4276/)  
-LinkedIn Article: [Read on LinkedIn](https://www.linkedin.com/pulse/internship-changed-my-perspective-online-learning-bontha-harika-i9dgc)
-
+# The Internship That Changed My Perspective on Online Learning
 
 
 Hello everyone, I would like to share my experience of doing the Winter Internship at IIT Ropar, an experience that truly changed the way I look at online learning.
@@ -32,3 +28,10 @@ Along with the courses, we were given case studies that required applying the le
 Even though only two weeks of the internship have been completed, I have already gained valuable technical knowledge, improved focus, and developed better learning discipline.
 
 This experience taught me that the problem is not online learning—it is how we engage with it. 
+
+LinkedIn Article:
+https://www.linkedin.com/pulse/internship-changed-my-perspective-online-learning-bontha-harika-i9dgc
+
+LinkedIn Profile:
+https://www.linkedin.com/in/bontha-harika-0253a4276/
+
