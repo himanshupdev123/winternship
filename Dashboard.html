@@ -142,8 +142,66 @@
 .dash-item.active .dash-content {
   max-height: 340px;
 }
+.dashboard-inner {
+  display: flex;
+  height: 85vh;
+}
+
+.dashboard-menu {
+  width: 240px;
+  background: #f3f4fb;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+}
+
+.menu-item {
+  padding: 12px 14px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #1a237e;
+}
+
+.menu-item:hover {
+  background: #c5cae9;
+}
+
+.menu-item.active {
+  background: #1a237e;
+  color: white;
+}
+
+.dashboard-view {
+  flex: 1;
+  padding: 0;
+}
+
+.dash-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: none;
+}
+
+.dash-frame.active {
+  display: block;
+}
 
   </style>
+  <script>
+  function showDashboardItem(index) {
+    const items = document.querySelectorAll('.menu-item');
+    const frames = document.querySelectorAll('.dash-frame');
+
+    items.forEach(i => i.classList.remove('active'));
+    frames.forEach(f => f.classList.remove('active'));
+
+    items[index].classList.add('active');
+    frames[index].classList.add('active');
+  }
+</script>
+
 </head>
 
 <body>
@@ -164,50 +222,49 @@
   </div>
 
   <!-- Content -->
-     <div class="dashboard-grid active">
+    <div class="dashboard-container active">
 
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">Institute Progress</div>
-    <div class="dash-content">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubhtml?gid=850605842&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <div class="dashboard-inner">
+    
+    <!-- Left List -->
+    <div class="dashboard-menu">
+      <div class="menu-item active" onclick="showDashboardItem(0)">Institute Progress</div>
+      <div class="menu-item" onclick="showDashboardItem(1)">Vibe Progress</div>
+      <div class="menu-item" onclick="showDashboardItem(2)">CS Stack Progress</div>
+      <div class="menu-item" onclick="showDashboardItem(3)">CS Lesson Progress</div>
+      <div class="menu-item" onclick="showDashboardItem(4)">Top Three</div>
+      <div class="menu-item" onclick="showDashboardItem(5)">Final Summary</div>
+    </div>
+
+    <!-- Right Content -->
+    <div class="dashboard-view">
+
+      <iframe class="dash-frame active"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubhtml?gid=850605842&single=true&widget=true&headers=false">
+      </iframe>
+
+      <iframe class="dash-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=1996443652&format=interactive">
+      </iframe>
+
+      <iframe class="dash-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=267156062&format=interactive">
+      </iframe>
+
+      <iframe class="dash-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=1679453273&format=interactive">
+      </iframe>
+
+      <iframe class="dash-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vEXAMPLE5/pubhtml">
+      </iframe>
+
+      <iframe class="dash-frame"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vEXAMPLE6/pubhtml">
+      </iframe>
+
     </div>
   </div>
-
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">Vibe Progress Chart</div>
-    <div class="dash-content">
-      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=1996443652&amp;format=interactive"></iframe>
-    </div>
-  </div>
-
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">CS Stack wise Progress</div>
-    <div class="dash-content">
-      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=267156062&amp;format=interactive"></iframe>
-    </div>
-  </div>
-
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">CS Lesson-wise Progress</div>
-    <div class="dash-content">
-      <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQikYOJQx4cmwGmF8qgmcR7UFPD4NQc69XzI_BR59fIWpx39bQgy4AlG7EQc8ejdW1112YhYLcMnyo0/pubchart?oid=1679453273&amp;format=interactive"></iframe>
-    </div>
-  </div>
-
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">TOP Three</div>
-    <div class="dash-content">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vEXAMPLE5/pubhtml"></iframe>
-    </div>
-  </div>
-
-  <div class="dash-item">
-    <div class="dash-header" onclick="toggleDash(this)">Final Summary</div>
-    <div class="dash-content">
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vEXAMPLE6/pubhtml"></iframe>
-    </div>
-  </div>
-
 </div>
 
 
