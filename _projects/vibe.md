@@ -1,7 +1,7 @@
 ---
 layout: project
 title: ViBe
-order: 1
+order: 3
 summary: AI-proctored video-based Learning Management System
 color: "FF9800"
 repo: "vicharanashala/vibe"

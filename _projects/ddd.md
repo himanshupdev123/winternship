@@ -1,7 +1,7 @@
 ---
 layout: project
 title: DDD
-order: 3
+order: 5
 summary: Dopamine Driven Dashboard - Integrated performance and engagement analytics across all projects
 color: "A7F3D0"
 linkColor: "059669"

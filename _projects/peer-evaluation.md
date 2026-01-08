@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Peer Evaluation
-order: 4
+order: 6
 summary: Multi-level peer assessment system with automated anomaly detection and escalation workflow
 color: "8B5CF6"
 repo: "vicharanashala/pes"
