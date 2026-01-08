@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Vi-Notes
-order: 7
+order: 8
 summary: Authenticity verification platform that ensures genuine human writing through keyboard activity monitoring and statistical signature analysis
 color: "FF6B6B"
 repo: "vicharanashala/"

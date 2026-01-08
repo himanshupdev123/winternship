@@ -11,7 +11,7 @@ permalink: /projects/
 </div>
 
 {% assign projects = site.projects | sort: "order" %}
-{% assign project_colors = "FF9800,3B82F6,A7F3D0,8B5CF6,059669,FFFF00,FF6B6B" | split: "," %}
+{% assign project_colors = "90EE90,059669,FF9800,3B82F6,A7F3D0,8B5CF6,FFFF00,FF6B6B" | split: "," %}
 
 {% for project in projects %}
 {% assign color = project_colors[forloop.index0] %}

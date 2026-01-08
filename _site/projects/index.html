@@ -51,6 +51,126 @@
 
 <div style="margin-bottom: 2.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   <details style="margin: 0;">
+    <summary style="cursor: pointer; font-size: 1.7rem; font-weight: bold; padding: 1.5rem 2rem; background: linear-gradient(135deg, #90EE9020 0%, #90EE9040 100%); border-left: 6px solid #90EE90; display: flex; align-items: center; gap: 0.75rem;">
+      <span>Ajrasakha Chatbot</span>
+    </summary>
+    
+    <div style="padding: 2rem; background-color: white;">
+      <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f6f8fa; border-radius: 8px; border-left: 4px solid #90EE90;">
+        <p style="margin: 0; color: #586069; font-size: 1rem; text-align: justify;"><strong>Summary:</strong> Multilingual agricultural chatbot that connects farmers with verified knowledge through a smart answer retrieval system</p>
+      </div>
+      
+      <div style="prose max-width: none; text-align: justify;">
+        <h2 id="project-overview"><strong>Project Overview</strong></h2>
+
+<p>Ajrasakha Chatbot is a farmer-friendly chat interface where agricultural workers can ask questions in their own language and receive reliable answers instantly. The system follows a smart three-tier approach to find the best answer: it first searches the Golden Dataset (a collection of expert-verified question-answer pairs), then checks the Package of Practices (PoP) database for standard agricultural guidelines, and finally uses advanced AI language models if neither source has the answer. This ensures farmers always get helpful responses, whether from verified expert knowledge or AI-generated guidance.</p>
+
+<h2 id="key-features"><strong>Key Features</strong></h2>
+
+<p>Farmers can ask questions in their native language, making the platform accessible to agricultural workers across different regions. The chat interface is simple and intuitive, designed for users who may not be tech-savvy. Questions are answered through a smart prioritization system: verified answers from the Golden Dataset appear first, followed by standard practices from the Package of Practices, and finally AI-generated responses when needed.</p>
+
+<p>The platform supports multiple regional languages through the Sarvam AI API, ensuring farmers can communicate naturally in their preferred language. Voice input is available through speech-to-text capabilities, allowing farmers to ask questions by speaking rather than typing. All conversations are saved, so farmers can revisit previous answers anytime.</p>
+
+<p>Real-time chat delivery ensures farmers receive answers instantly, whether from the knowledge base or AI models. The system is built on LibreChat technology, providing a reliable and modern chat experience similar to popular AI assistants but tailored specifically for agricultural needs.</p>
+
+<h2 id="technologies-used"><strong>Technologies Used</strong></h2>
+
+<p>The chat interface is built with React and TypeScript for a smooth, responsive user experience. The backend uses Node.js and Express.js to handle chat messages and route queries efficiently. LibreChat provides the foundation for the chat interface, offering a modern and reliable messaging platform.</p>
+
+<p>For AI capabilities, the system integrates DeepSeek-R1, Qwen3, and GPT-OSS language models through Ollama. MongoDB Atlas stores the Golden Dataset and Package of Practices, using vector search to find semantically similar questions. The Sarvam AI API handles regional language translation, enabling farmers to communicate in their native languages.</p>
+
+<p>Authentication is handled through Firebase, ensuring secure access for farmers. The system uses Model Context Protocol (MCP) servers to access structured agricultural data efficiently.</p>
+
+<h2 id="how-it-works"><strong>How It Works</strong></h2>
+
+<p>When a farmer asks a question, the system first searches the Golden Dataset for verified answers from agricultural experts. If a matching answer exists, it’s delivered instantly. If not found, the system checks the Package of Practices database for standard agricultural guidelines and best practices relevant to the question.</p>
+
+<p>When neither the Golden Dataset nor Package of Practices contain the answer, the system uses AI language models to generate a helpful response based on agricultural knowledge. This AI-generated answer is sent to the farmer’s chat so they receive immediate guidance. Simultaneously, the question and AI-generated answer are forwarded to the Ajrasakha Reviewer System for expert validation.</p>
+
+<p>This three-tier approach ensures farmers always receive timely answers while maintaining quality through expert review. Over time, as more questions are reviewed and approved, the Golden Dataset grows, meaning more farmers receive instantly verified answers instead of AI-generated ones.</p>
+
+<h2 id="benefits-for-farmers"><strong>Benefits for Farmers</strong></h2>
+
+<p>Farmers get instant answers to their agricultural questions without language barriers, as the system supports multiple regional languages. They can ask questions via text or voice, making it accessible even to those who struggle with typing. The chat interface is simple and familiar, similar to popular messaging apps.</p>
+
+<p>By prioritizing verified expert knowledge from the Golden Dataset, farmers receive trusted information first. When AI generates answers, those responses still undergo expert review through the Ajrasakha Reviewer System, ensuring quality improves continuously. All conversations are saved, allowing farmers to reference previous answers whenever needed.</p>
+
+<p>The platform is available anytime, providing 24/7 access to agricultural guidance regardless of expert availability. This helps farmers make timely decisions, especially during critical farming periods when immediate answers are essential.</p>
+
+<h2 id="github-repository"><strong>GitHub Repository</strong></h2>
+
+<p><a href="https://github.com/vicharanashala/ajrasakha-client" target="_blank">Ajrasakha Chatbot Client</a></p>
+
+
+      </div>
+    </div>
+  </details>
+</div>
+
+<div style="margin-bottom: 2.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <details style="margin: 0;">
+    <summary style="cursor: pointer; font-size: 1.7rem; font-weight: bold; padding: 1.5rem 2rem; background: linear-gradient(135deg, #05966920 0%, #05966940 100%); border-left: 6px solid #059669; display: flex; align-items: center; gap: 0.75rem;">
+      <span>Ajrasakha Reviewer System</span>
+    </summary>
+    
+    <div style="padding: 2rem; background-color: white;">
+      <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f6f8fa; border-radius: 8px; border-left: 4px solid #059669;">
+        <p style="margin: 0; color: #586069; font-size: 1rem; text-align: justify;"><strong>Summary:</strong> AI-powered agricultural advisory platform with expert knowledge base and multi-level review system</p>
+      </div>
+      
+      <div style="prose max-width: none; text-align: justify;">
+        <h2 id="project-overview"><strong>Project Overview</strong></h2>
+
+<p>The Ajrasakha Reviewer System is the quality control backbone that ensures farmers receive accurate, expert-verified information. When the chatbot uses AI language models to answer a farmer’s question (because the answer wasn’t found in the Golden Dataset or Package of Practices), that question and AI-generated answer are automatically sent to this reviewer system. Here, real agricultural experts review the question, evaluate the AI’s response, and provide their expert opinion through multiple review phases. Once the review process is complete and experts approve the answer, it’s added to the Golden Dataset, making it available as a verified answer for future farmers who ask similar questions.</p>
+
+<h2 id="key-features"><strong>Key Features</strong></h2>
+
+<p>The reviewer system receives questions that were answered by AI models in the chatbot. These questions go through multiple review phases where different agricultural experts independently evaluate both the question and the AI-generated answer. Each expert can approve, modify, or reject the answer, adding their professional insights and corrections.</p>
+
+<p>Experts are tracked through a reputation system that rewards quality contributions. The system monitors each expert’s approval rates, response times, and answer quality. Experts earn incentive points for thorough reviews, while penalties apply for rushed or low-quality evaluations. This gamification encourages experts to provide careful, thoughtful reviews.</p>
+
+<p>After the final review phase, approved question-answer pairs are automatically added to the Golden Dataset. The analytics dashboard shows how the Golden Dataset grows over time, tracks expert contributions, monitors question review status, and identifies common agricultural topics that farmers ask about. This helps administrators understand farmer needs and optimize the knowledge base.</p>
+
+<h2 id="technologies-used"><strong>Technologies Used</strong></h2>
+
+<p>The backend uses TypeScript, Express.js, Node.js, MongoDB Atlas with Vector Search, InversifyJS for dependency injection, Firebase Authentication, and Sentry for error monitoring. The frontend is built with React, TypeScript, TanStack Router, TanStack Query, Shadcn UI, and Tailwind CSS.</p>
+
+<p>For AI/ML, the platform uses DeepSeek-R1 (70B), Qwen3 (1.7B), and GPT-OSS (20B) LLMs via Ollama, HuggingFace BAAI/bge-large-en-v1.5 for embeddings, MongoDB Atlas as the vector database, and MCP servers for structured data access. Additional services include MCP tools for Golden Dataset and FAQ access, audio processing for voice queries, and Sarvam AI API for regional languages.</p>
+
+<h2 id="system-architecture"><strong>System Architecture</strong></h2>
+
+<p>When a farmer’s question is answered by the AI language model in the chatbot (meaning it wasn’t found in Golden Dataset or Package of Practices), the system automatically creates a review task. This task contains the original question, the AI-generated answer, and relevant context like the farmer’s state and crop information.</p>
+
+<p>The review task moves through multiple phases, with different agricultural experts assigned to each phase. Experts can view the question, see what the AI answered, and provide their assessment. They can approve the answer as-is, suggest modifications, or provide a completely new expert answer. After all review phases are complete, moderators perform a final quality check.</p>
+
+<p>Once approved, the question-answer pair is added to the Golden Dataset with metadata including the expert who reviewed it, verification status, and agricultural domain (crop type, state, season, etc.). Future farmers asking similar questions will now receive this expert-verified answer instantly from the chatbot.</p>
+
+<p>The platform serves three user types: Agricultural Experts (review AI-generated answers, earn reputation points), Moderators (perform final approval, ensure quality standards), and Admins (manage the review workflow, monitor expert performance, oversee system operations).</p>
+
+<h2 id="data-structure"><strong>Data Structure</strong></h2>
+
+<p>The Golden Dataset stores question-answer pairs with embeddings, metadata (state, crop, season, domain, specialist, sources), similarity scores, and verification status. Expert performance tracking includes reputation scores, incentive tracking, penalty tracking, and response quality metrics.</p>
+
+<h2 id="project-goals"><strong>Project Goals</strong></h2>
+
+<p>The Reviewer System ensures that AI-generated answers are validated by real agricultural experts before becoming part of the permanent knowledge base. This creates a growing library of expert-verified information that makes the chatbot smarter over time. As more questions are reviewed and approved, more farmers receive instant verified answers instead of AI-generated ones.</p>
+
+<p>The multi-phase review process ensures quality through multiple expert opinions, reducing the chance of incorrect information reaching farmers. By tracking expert performance and providing incentives, the system motivates agricultural specialists to contribute their knowledge. The reputation system recognizes top contributors and maintains high review standards.</p>
+
+<p>Ultimately, the Reviewer System builds a comprehensive, state and crop-specific agricultural knowledge base that reflects real expert wisdom. It helps identify which topics farmers ask about most frequently, guiding future content creation and expert recruitment. This continuous improvement cycle ensures the platform becomes more valuable to farmers every day.</p>
+
+<h2 id="github-repository"><strong>GitHub Repository</strong></h2>
+
+<p><a href="https://github.com/vicharanashala/ajrasakha" target="_blank">Ajrasakha</a></p>
+
+
+      </div>
+    </div>
+  </details>
+</div>
+
+<div style="margin-bottom: 2.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <details style="margin: 0;">
     <summary style="cursor: pointer; font-size: 1.7rem; font-weight: bold; padding: 1.5rem 2rem; background: linear-gradient(135deg, #FF980020 0%, #FF980040 100%); border-left: 6px solid #FF9800; display: flex; align-items: center; gap: 0.75rem;">
       <span>ViBe</span>
     </summary>
@@ -399,58 +519,6 @@ Teacher dashboard organized by course sections, providing insights into section-
 <h2 id="github-repository"><strong>GitHub Repository</strong></h2>
 
 <p><a href="https://github.com/vicharanashala/pes" target="_blank">PES</a></p>
-
-
-      </div>
-    </div>
-  </details>
-</div>
-
-<div style="margin-bottom: 2.5rem; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-  <details style="margin: 0;">
-    <summary style="cursor: pointer; font-size: 1.7rem; font-weight: bold; padding: 1.5rem 2rem; background: linear-gradient(135deg, #05966920 0%, #05966940 100%); border-left: 6px solid #059669; display: flex; align-items: center; gap: 0.75rem;">
-      <span>Ajrasakha</span>
-    </summary>
-    
-    <div style="padding: 2rem; background-color: white;">
-      <div style="margin-bottom: 1.5rem; padding: 1rem; background-color: #f6f8fa; border-radius: 8px; border-left: 4px solid #059669;">
-        <p style="margin: 0; color: #586069; font-size: 1rem; text-align: justify;"><strong>Summary:</strong> AI-powered agricultural advisory platform with expert knowledge base and multi-level review system</p>
-      </div>
-      
-      <div style="prose max-width: none; text-align: justify;">
-        <h2 id="project-overview"><strong>Project Overview</strong></h2>
-
-<p>Ajrasakha connects farmers with verified agricultural knowledge through an AI-powered chat interface. The system uses a Golden Dataset of verified Q&amp;As and Package of Practices (PoP), leveraging vector search and semantic similarity for accurate answers. When AI can’t help, questions route to agricultural experts for review. The platform features multi-level moderation with expert performance tracking, reputation scores, and continuous learning where verified answers feed back into the Golden Dataset.</p>
-
-<h2 id="key-features"><strong>Key Features</strong></h2>
-
-<p>Farmers interact through an AI chat interface that provides state and crop-specific answers in multiple regional languages. They can track their questions in real-time as they move through the review system. The Golden Dataset uses MongoDB Atlas vector search with HuggingFace embeddings (BAAI/bge-large-en-v1.5) for semantic search, automatically growing as approved expert answers get added back.</p>
-
-<p>When AI can’t answer, questions route to agricultural specialists whose responses go through moderator review. The system tracks expert performance using reputation scores, incentives, and penalties. The analytics dashboard monitors dataset growth, expert contributions, question status distribution, moderator approval rates, and question sources.</p>
-
-<h2 id="technologies-used"><strong>Technologies Used</strong></h2>
-
-<p>The backend uses TypeScript, Express.js, Node.js, MongoDB Atlas with Vector Search, InversifyJS for dependency injection, Firebase Authentication, and Sentry for error monitoring. The frontend is built with React, TypeScript, TanStack Router, TanStack Query, Shadcn UI, and Tailwind CSS.</p>
-
-<p>For AI/ML, the platform uses DeepSeek-R1 (70B), Qwen3 (1.7B), and GPT-OSS (20B) LLMs via Ollama, HuggingFace BAAI/bge-large-en-v1.5 for embeddings, MongoDB Atlas as the vector database, and MCP servers for structured data access. Additional services include MCP tools for Golden Dataset and FAQ access, audio processing for voice queries, and Sarvam AI API for regional languages.</p>
-
-<h2 id="system-architecture"><strong>System Architecture</strong></h2>
-
-<p>When farmers submit questions, the system detects context (state and crop information) and searches the Golden Dataset using vector search. If no match exists, it searches the Package of Practices database. Still no answer? The question routes to agricultural experts who provide responses with metadata. Moderators review and approve the best answer, which gets added to the Golden Dataset. The farmer receives a notification when their answer is ready.</p>
-
-<p>The platform serves four user types: Farmers (submit questions, receive answers), Experts (answer routed questions, earn reputation), Moderators (review and approve expert answers), and Admins (system management).</p>
-
-<h2 id="data-structure"><strong>Data Structure</strong></h2>
-
-<p>The Golden Dataset stores question-answer pairs with embeddings, metadata (state, crop, season, domain, specialist, sources), similarity scores, and verification status. Expert performance tracking includes reputation scores, incentive tracking, penalty tracking, and response quality metrics.</p>
-
-<h2 id="project-goals"><strong>Project Goals</strong></h2>
-
-<p>Ajrasakha provides instant agricultural guidance using AI while building a comprehensive knowledge base that grows smarter over time. The platform connects farmers with experts for complex queries, implements multi-level quality control, and tracks expert contributions through incentives. It delivers state and crop-specific advice in regional languages, creating a self-improving knowledge base that helps identify common agricultural challenges.</p>
-
-<h2 id="github-repository"><strong>GitHub Repository</strong></h2>
-
-<p><a href="https://github.com/vicharanashala/ajrasakha" target="_blank">Ajrasakha</a></p>
 
 
       </div>

@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Spandan
-order: 2
+order: 4
 summary: Live class interaction platform with AI-powered question generation
 color: "3B82F6"
 repo: "vicharanashala/poll-question-gen"
