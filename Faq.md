@@ -12,7 +12,7 @@ order: 2
 3. [Mentorship & Guidance](#3-mentorship--guidance)
 4. [Support and Resolution Protocol](#4-support-and-resolution-protocol)
 5. [Stipend and Certification](#5-stipend-and-certification)
-6. [Completion & Certification](#6-completion--certification)
+6. [Internship Completion](#6-internship-completion)
 7. [Report Submission & Deadline](#7-report-submission--deadline)
 8. [Termination, Appeals & Rejoining](#8-termination-appeals--rejoining)
 9. [ViBe Platform](#9-vibe-platform)
