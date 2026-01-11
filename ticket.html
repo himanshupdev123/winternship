@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Holders Podium</title>
+
+  <style>
+    /* ====== Global Reset ====== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: #050812;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+        Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    /* ====== Podium Component ====== */
+    .ticket-podium {
+      --bg: #0b0f19;
+      --panel: rgba(255, 255, 255, 0.06);
+      --panel2: rgba(255, 255, 255, 0.09);
+      --text: rgba(255, 255, 255, 0.92);
+      --muted: rgba(255, 255, 255, 0.65);
+      --stroke: rgba(255, 255, 255, 0.12);
+
+      --gold: rgba(255, 209, 102, 0.35);
+      --silver: rgba(200, 210, 220, 0.30);
+      --bronze: rgba(205, 127, 50, 0.30);
+
+      width: 100%;
+      max-width: 1200px;
+      background: radial-gradient(1200px 400px at 50% 0%,
+          rgba(120, 140, 255, 0.16),
+          transparent 55%),
+        radial-gradient(800px 400px at 15% 10%,
+          rgba(255, 209, 102, 0.12),
+          transparent 55%),
+        radial-gradient(900px 500px at 90% 30%,
+          rgba(205, 127, 50, 0.12),
+          transparent 55%),
+        var(--bg);
+      color: var(--text);
+      border-radius: 22px;
+      border: 1px solid var(--stroke);
+      padding: 32px;
+    }
+
+    /* ====== Header ====== */
+    .tp-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .tp-kicker {
+      display: inline-block;
+      padding: 6px 14px;
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--stroke);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.05);
+      margin-bottom: 12px;
+    }
+
+    .tp-title {
+      font-size: clamp(26px, 4vw, 38px);
+      margin-bottom: 8px;
+    }
+
+    .tp-subtitle {
+      max-width: 70ch;
+      margin: 0 auto;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* ====== Grid ====== */
+    .tp-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr 1fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    /* ====== Card Base ====== */
+    .tp-card {
+      position: relative;
+      background: linear-gradient(180deg, var(--panel2), var(--panel));
+      border-radius: 20px;
+      border: 1px solid var(--stroke);
+      padding: 16px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      overflow: hidden;
+    }
+
+    .tp-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    }
+
+    /* ====== Podium Height ====== */
+    .tp-gold {
+      transform: translateY(-12px);
+    }
+
+    /* ====== Glow Layers ====== */
+    .tp-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle, transparent 30%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .tp-gold::before {
+      background: radial-gradient(circle, var(--gold), transparent 70%);
+    }
+
+    .tp-silver::before {
+      background: radial-gradient(circle, var(--silver), transparent 70%);
+    }
+
+    .tp-bronze::before {
+      background: radial-gradient(circle, var(--bronze), transparent 70%);
+    }
+
+    /* ====== Badge ====== */
+    .tp-badge {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid var(--stroke);
+      background: rgba(255, 255, 255, 0.06);
+      backdrop-filter: blur(8px);
+      margin-bottom: 12px;
+    }
+
+    .tp-medal {
+      font-size: 22px;
+    }
+
+    .tp-tier {
+      font-weight: 700;
+      letter-spacing: 0.03em;
+    }
+
+    /* ====== Lists ====== */
+    .tp-list {
+      list-style: none;
+      display: grid;
+      gap: 8px;
+    }
+
+    .tp-list li {
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 13.5px;
+    }
+
+    .tp-list li:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .tp-list-hero li {
+      font-size: 15px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 209, 102, 0.18),
+        rgba(255, 255, 255, 0.05)
+      );
+      border-color: rgba(255, 209, 102, 0.22);
+    }
+
+    /* ====== Footer ====== */
+    .tp-footer {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+      text-align: right;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ====== Responsive ====== */
+    @media (max-width: 900px) {
+      .tp-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tp-gold {
+        transform: translateY(0);
+        order: -1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="ticket-podium">
+    <header class="tp-header">
+      <div class="tp-kicker">Ticket Holders</div>
+      <h1 class="tp-title">Gold • Silver • Bronze</h1>
+      <p class="tp-subtitle">
+        A podium-style showcase of our ticket holders, highlighting Gold, Silver,
+        and Bronze tiers with clarity and prestige.
+      </p>
+    </header>
+
+    <div class="tp-grid">
+      <!-- Silver -->
+      <article class="tp-card tp-silver">
+        <div class="tp-badge">
+          <span class="tp-medal">🥈</span>
+          <span class="tp-tier">Silver</span>
+        </div>
+        <ul class="tp-list">
+          <li>A S R S S Snigdha</li>
+          <li>Abhrankan Chakrabarti</li>
+          <li>Abhijeet Dubey</li>
+          <li>Arpita Usadadiya</li>
+          <li>Aradhya Joshi</li>
+          <li>Busetty Balasubramanyam</li>
+          <li>Debottam Talukdar</li>
+          <li>Divya Chhabra</li>
+          <li>Dnyanesh Agale</li>
+          <li>Donkena Sri Vivek Chand</li>
+          <li>Gutala Ashwitha</li>
+          <li>Jaisree Ragavi J</li>
+          <li>Purbasha Roy</li>
+          <li>Sandeep Chagapuram</li>
+          <li>Sayan Deb</li>
+          <li>Shriyash Gulhane</li>
+          <li>Shruti Jha</li>
+          <li>Suhani Pal</li>
+          <li>Tamada Ramya</li>
+        </ul>
+        <div class="tp-footer">19 Ticket Holders</div>
+      </article>
+
+      <!-- Gold -->
+      <article class="tp-card tp-gold">
+        <div class="tp-badge">
+          <span class="tp-medal">🥇</span>
+          <span class="tp-tier">Gold</span>
+        </div>
+        <ul class="tp-list tp-list-hero">
+          <li>Ahana Sarkar</li>
+          <li>Himanshu P Dev</li>
+          <li>Pratheek Gaba</li>
+        </ul>
+        <div class="tp-footer">3 Ticket Holders</div>
+      </article>
+
+      <!-- Bronze -->
+      <article class="tp-card tp-bronze">
+        <div class="tp-badge">
+          <span class="tp-medal">🥉</span>
+          <span class="tp-tier">Bronze</span>
+        </div>
+        <ul class="tp-list">
+          <li>Abhinav Kumar Jha</li>
+          <li>Aryan Dadich</li>
+          <li>Bollena Varsha</li>
+          <li>Chilakamarri Krishna Panchajanya</li>
+          <li>Gokul P</li>
+          <li>M. Goutham Reddy</li>
+          <li>Manish Kumawat</li>
+          <li>Meda Tarun Venkat</li>
+          <li>Nandini Prasad</li>
+          <li>Nikhil Dutta Anala</li>
+          <li>Ritesh Kumar Agrawal</li>
+          <li>Shyam Patel</li>
+          <li>Sruthi S</li>
+          <li>Tejas Jain</li>
+          <li>V Rohith</li>
+          <li>Vedam Venkata Sarma</li>
+          <li>Vinay Jawahar Lal Yadav</li>
+          <li>Vignesh Rapolu</li>
+          <li>Vipra Ram Bangera</li>
+        </ul>
+        <div class="tp-footer">19 Ticket Holders</div>
+      </article>
+    </div>
+  </section>
+</body>
+</html>
