@@ -4,19 +4,6 @@ title: Announcements
 permalink: /announcements/
 order: 1
 announcements:
-  - title: "Hackathon Alert!"
-    date: "January 10, 2026"
-    description: "Join us for a full-day hackathon tomorrow from 9 AM to 9 PM."
-    content: |
-      **Participation:** 
-      The hackathon is not compulsory but it would be good if you attend. It will enhance your knowledge and skills.
-
-      **Duration:** 9 AM to 9 PM.
-      
-      **Problem Statement:** The problem statement and other details will be given at the start of the hackathon. Surprise!
-      
-      **Need help?** Check out the [Hackathon FAQ](/winternship/hackathon-faq/) for common questions and answers.
-
   - title: "The Self-Healing Endorsement Network"
     date: "January 9, 2026"
     description: "Understanding the endorsement network system, audit process, incentives, and dashboard challenge for visualizing endorsement chains and network health."
